@@ -1,1 +1,22 @@
-
+Aim :- To configure a GPIO pin as output and blink an LED using softwrae delay.
+Apparatus :- STM32f446RE board ; USB Cable ; STM32CubeIDE ; STM32CubeMX
+Theory :- STM32 microcontroller has GPIO pjns which can be used as input or output . In this experiment,PA5 is used as output to control the onboard 
+    LED(LD2).
+    When the pin is set HIGH, LED turns ON, and when LOW , LED turns OFF. By continuously toggling the pin using a delay.\, the LED blinks.
+    HAL functions like HAL_GPIO_TogglePin() and HAL_Delay() are used to control the LED easily.
+Proceure :-  
+   1. Open STM32CubeMX and select STM32F446RE
+   2. Configure PA5 as GPIO Output.
+   3. Set clock settings
+   4. Generate code and open in STM32CubeIDE
+   5. Open main.c 
+   6. Write code inside while loop
+   7. Build the project
+   8. Connect board and run program
+   9. Observe LED blinking
+Observation :-
+  * LED blinks continuously
+  * Smaller delay gives faster blinking 
+  * Larger delay gives slower blinking
+Result :- LED successfully blinked using GPIO output and software delay.
+Conclusion :- This experiment helped in understanding GPIO output and basic LED control using STM32. It also showed now delay affects blinking speed. 
