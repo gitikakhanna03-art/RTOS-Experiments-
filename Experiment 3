@@ -1,0 +1,8 @@
+Aim :- To interface an HC-SR04 ultrasonic sensor with STM32 and control an LED based on distance
+Apparatus :- STM32 Nucleo-F446RE Board ; HC-SR04 Ultrasonic Sensor ; Jumper Wires ; USB Cable; STM32CubeIDE; STM32CubeMX
+Theory :- The HC-SR04 sensor is used to measure distance using ultasonic waves. It sends a signal(TRIG) and receives it back(ECHO).
+The time taken by the signal to return is used to calculate distance.
+STM32 reads this time and calculates distance using:
+   Distance =(Soeed*Time)/2
+If the object is close,LED turns ON.If far,LED turns OFF.
+Procedure :- 
