@@ -1,0 +1,20 @@
+Aim :- To interface a push button as a digital input and control an LED by toggling itsstate in each valid button press.
+Apparatus :- STM32 Nucleo-F446RE Development Board ; USB Type-A to Mini-B Cable ; STM32CubeIDE ; STM32CubeMX
+Theory :- The STM32f446RE microcontroller provides multiple GPIO ports that can be configured as a digital output to contol the onboard LED(LD2), and 
+       pin PC13 is configured as a digital input connected to the user button. The push Button works on active-low logic,meaning the pin reads LOW 
+       when pressed and HIGH when released. Using HAL functions such as HAL_GPIO_ReadPin() and HAL_GPIO_TogglePin(), the LED state is toggled whenever
+      a valid button press is detected. A small delay is added to handle basuc debouncing and prevent multiple unwanted toggles.
+Procedure :-
+    1.  Open STM32CubeMX and acess the MCU Selector
+    2.  Select STM32F446RE and start the project    
+    3.  Configure PA5 as GPIO Output(LED) and PC13 as GPIO Input(Push Button)
+    4.  Select RCC clock source (BYPASS).
+    5.  Configure clock settings.
+    6.  Enter project name and select STM32CubeIDE.
+    7.  Generate code and open project.
+    8.  Open main.c file.
+    9.  Write code using HAL_GPIO_Pin() , HAL_GPIO_TogglePin(), HAL_delay() inside the loop 
+    10. Build project(no error)
+    11. Connect board using USB cable
+    12. Debug and resume
+    13. Press push button and observe LED toggle.
