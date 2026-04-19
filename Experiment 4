@@ -1,0 +1,5 @@
+Aim :- To generate a PWM signal using a timer on STM32F446RE and control the brightness of an onboard LED by varying the duty cycle.
+Apparatus :- STM32 Nucleo-F446RE Development board ; USB Type-A to Mini-B Cable ; STM32CubeIDE; STM32CubeMX
+Theory :- PWM(Pulse Width Modulation) is a technique where we turn a signal ON and OFF very afst to control power.
+    Instead of changing voltage directly we change how long the signal stays ON.
+  
